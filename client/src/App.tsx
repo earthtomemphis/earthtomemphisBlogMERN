@@ -1,15 +1,13 @@
-import { Route } from 'react-router-dom';
-import Header from './components/Header';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 
 const App = () => {
 	return (
-		<Route>
-			<Header />
-			<main className="container mx-auto">
-				<HomePage />
-			</main>
-		</Route>
+		<Router>
+			<Route>
+				<Route path="/" element={<HomePage />} />
+			</Route>
+		</Router>
 	);
 };
 
