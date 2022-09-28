@@ -14,9 +14,9 @@ const Card: React.FC<{ post: Post }> = ({ post }) => {
 				<h2 className="card-title">{post.title}</h2>
 				<p>{post.excerpt}</p>
 				<span>By: {post.author}</span>
-				<span>Posted; {post.date}</span>
+				<span>Posted: {post.date}</span>
 				<div className="card-actions justify-end">
-					<button className="btn btn-primary mt-2">Buy Now</button>
+					<button className="btn btn-primary mt-2">Read More</button>
 				</div>
 			</div>
 		</div>
