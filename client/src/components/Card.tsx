@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Post } from '../interfaces/blog/Post';
 
 const Card: React.FC<{ post: Post }> = ({ post }) => {
