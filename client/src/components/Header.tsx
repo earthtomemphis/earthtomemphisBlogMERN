@@ -2,7 +2,10 @@ import * as React from 'react';
 
 const Header = () => {
 	return (
-		<div className="navbar bg-base-100">
+		<div
+			className="navbar 
+		bg-base-100"
+		>
 			<div className="flex-1">
 				<a href="/" className="btn btn-ghost normal-case text-xl">
 					earthtomemphis
@@ -11,9 +14,9 @@ const Header = () => {
 			<div className="flex-none">
 				<ul className="menu menu-horizontal p-0">
 					<li>
-						<a href="/">Item 1</a>
+						<a href="/">Blog</a>
 					</li>
-					<li>
+					{/* <li>
 						<a href="/">
 							Parent
 							<svg
@@ -34,9 +37,12 @@ const Header = () => {
 								<a href="/"> Submenu 2</a>
 							</li>
 						</ul>
+					</li> */}
+					<li>
+						<a href="/">About</a>
 					</li>
 					<li>
-						<a href="/">Item 3</a>
+						<a href="/">Contact</a>
 					</li>
 				</ul>
 			</div>
