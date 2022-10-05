@@ -7,7 +7,7 @@ import { Post } from '../interfaces/blog/Post';
 const HomePage = () => {
 	return (
 		<div className="container mx-auto">
-			<div className="mt-4 grid grid-cols-1  md:grid-cols-2">
+			<div className="mt-4 flex flex-col md:grid md:grid-cols-1 lg:grid-cols-2">
 				{db.posts.map((post: Post) => (
 					<Card key={post.id} post={post} />
 				))}
