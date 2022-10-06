@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 	return (
@@ -14,7 +15,7 @@ const Header = () => {
 			<div className="flex-none">
 				<ul className="menu menu-horizontal p-0">
 					<li>
-						<a href="/">Blog</a>
+						<Link to="/">Blog</Link>
 					</li>
 					{/* <li>
 						<a href="/">
@@ -39,10 +40,10 @@ const Header = () => {
 						</ul>
 					</li> */}
 					<li>
-						<a href="/">About</a>
+						<Link to="/about">About</Link>
 					</li>
 					<li>
-						<a href="/">Contact</a>
+						<Link to="/">Contact</Link>
 					</li>
 				</ul>
 			</div>
