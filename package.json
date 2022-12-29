@@ -1,0 +1,27 @@
+{
+	"name": "earthtomemphis",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node server/src/index.ts",
+		"server": "nodemon server/src/index.ts",
+		"client": "cd client && npm run start",
+		"dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/earthtomemphis/earthtomemphisBlogMERN.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/earthtomemphis/earthtomemphisBlogMERN/issues"
+	},
+	"homepage": "https://github.com/earthtomemphis/earthtomemphisBlogMERN#readme",
+	"dependencies": {
+		"concurrently": "^7.6.0",
+		"nodemon": "^2.0.20"
+	}
+}
